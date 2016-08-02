@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculadora.app.gui.mainCalculadoraController">
+   <children>
+      <VBox layoutY="-4.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <children>
+            <Label fx:id="appLabel" alignment="CENTER_RIGHT" prefHeight="65.0" prefWidth="325.0" text="012345678901234" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="72.0" prefWidth="316.0">
+               <children>
+                  <Button fx:id="buttonPlus" mnemonicParsing="false" onAction="#handleButtonPlus" prefHeight="71.0" prefWidth="121.0" text="+" />
+                  <Button fx:id="buttonMinus" mnemonicParsing="false" onAction="#handleButtonMinus" prefHeight="71.0" prefWidth="121.0" text="-" />
+                  <Button fx:id="buttonTimes" mnemonicParsing="false" onAction="#handleButtonTimes" prefHeight="71.0" prefWidth="121.0" text="*" />
+                  <Button fx:id="buttonDivided" mnemonicParsing="false" onAction="#handleButtonDivided" prefHeight="71.0" prefWidth="121.0" text="/" />
+               </children>
+            </HBox>
+            <HBox prefHeight="72.0" prefWidth="316.0">
+               <children>
+                  <Button fx:id="buttonSeven" mnemonicParsing="false" onAction="#handleButtonSeven" prefHeight="71.0" prefWidth="121.0" text="7" />
+                  <Button fx:id="buttonEight" mnemonicParsing="false" onAction="#handleButtonEight" prefHeight="71.0" prefWidth="121.0" text="8" />
+                  <Button fx:id="buttonNine" mnemonicParsing="false" onAction="#handleButtonNine" prefHeight="71.0" prefWidth="121.0" text="9" />
+               </children>
+            </HBox>
+            <HBox prefHeight="72.0" prefWidth="316.0">
+               <children>
+                  <Button fx:id="buttonFour" mnemonicParsing="false" onAction="#handleButtonFour" prefHeight="71.0" prefWidth="121.0" text="4" />
+                  <Button fx:id="buttonFive" mnemonicParsing="false" onAction="#handleButtonFive" prefHeight="71.0" prefWidth="121.0" text="5" />
+                  <Button fx:id="buttonSix" mnemonicParsing="false" onAction="#handleButtonSix" prefHeight="71.0" prefWidth="121.0" text="6" />
+               </children>
+            </HBox>
+            <HBox prefHeight="72.0" prefWidth="316.0">
+               <children>
+                  <Button fx:id="buttonOne" mnemonicParsing="false" onAction="#handleButtonOne" prefHeight="71.0" prefWidth="121.0" text="1" />
+                  <Button fx:id="buttonTwo" mnemonicParsing="false" onAction="#handleButtonTwo" prefHeight="71.0" prefWidth="121.0" text="2" />
+                  <Button fx:id="buttonThree" mnemonicParsing="false" onAction="#handleButtonThree" prefHeight="71.0" prefWidth="121.0" text="3" />
+               </children>
+            </HBox>
+            <HBox prefHeight="72.0" prefWidth="316.0">
+               <children>
+                  <Button fx:id="buttonZero" mnemonicParsing="false" onAction="#handleButtonZero" prefHeight="71.0" prefWidth="121.0" text="0" />
+                  <Button fx:id="buttonComa" mnemonicParsing="false" onAction="#handleButtonComa" prefHeight="71.0" prefWidth="121.0" text="," />
+                  <Button fx:id="buttonEnter" mnemonicParsing="false" onAction="#handleButtonEnter" prefHeight="71.0" prefWidth="121.0" text="Enter" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
